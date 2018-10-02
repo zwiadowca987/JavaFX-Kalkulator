@@ -22,27 +22,7 @@ public class Controller implements Initializable{
     private String tekst2;
     @FXML
     private Label wynik = new Label();
-/*
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        tekst1 = pole1.getText();
-        tekst2 = pole2.getText();
 
-        try
-        {
-            pole_dane1 = (Double.parseDouble(tekst1));
-            pole_dane2 = (Double.parseDouble(tekst2));
-
-            if(true) {
-                wynik.setText((String)(pole_dane1 + "" + pole_dane2));
-            }
-        }
-        catch(NumberFormatException e)
-        {
-            wynik.setText("Błąd w jednym z pól");
-        }
-    }
-*/
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //
