@@ -182,7 +182,11 @@ public class Controller implements Initializable{
 
     public void div() {
         pobierz();
-        wynik2.setText(Double.toString(cyfra11 / cyfra22));
+        if(cyfra22 != 0) wynik2.setText(Double.toString(cyfra11 / cyfra22));
+        else {
+            wynik2.setFont(Font.font ("Comic Sans MS", 15));
+            wynik2.setText("Pamiętaj cholero, nie dziel przez 0!");
+        }
     }
 
     public void pow() {
@@ -192,7 +196,11 @@ public class Controller implements Initializable{
 
     public void mod() {
         pobierz();
-        wynik2.setText(Double.toString(cyfra11 % cyfra22));
+        if(cyfra22 != 0) wynik2.setText(Double.toString(cyfra11 % cyfra22));
+        else {
+            wynik2.setFont(Font.font ("Comic Sans MS", 15));
+            wynik2.setText("Pamiętaj cholero, nie dziel przez 0!");
+        }
     }
 
     public void sinus() {
